@@ -1,0 +1,21 @@
+{
+    "enable_signatures_tooltip": true,
+    "enable_docstrings_tooltip": true,
+    "display_signatures": true,
+    "merge_signatures_and_doc": true,
+    "disable_anaconda_completion": false,
+    "complete_parameters": true,
+    "complete_all_parameters": false,
+
+    "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}],
+    "hide_snippets_on_completion":false,
+
+    "anaconda_linter_phantoms":true,
+    "anaconda_linting_behaviour":"load-save",
+
+    "pep8_ignore":
+    [
+        //"E501", //Long Lines
+        //"E265" //Block comments should have a space after
+    ],
+}
