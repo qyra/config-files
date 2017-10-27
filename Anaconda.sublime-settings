@@ -1,6 +1,6 @@
 {
-    "enable_signatures_tooltip": true,
-    "enable_docstrings_tooltip": true,
+    "enable_signatures_tooltip": false,
+    "enable_docstrings_tooltip": false,
     "display_signatures": true,
     "merge_signatures_and_doc": true,
     "disable_anaconda_completion": false,

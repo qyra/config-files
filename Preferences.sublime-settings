@@ -1,4 +1,6 @@
 {
+	"draw_white_space": "all",
+	"open_files_in_new_window": false,
 	"auto_complete": false,
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": true,
