@@ -1,13 +1,13 @@
 {
-	"draw_white_space": "all",
-	"open_files_in_new_window": false,
 	"auto_complete": false,
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": true,
 	"bold_folder_labels": true,
 	"caret_style": "solid",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -47,6 +47,7 @@
 		"side_bar_visible": true,
 		"status_bar_visible": true
 	},
+	"open_files_in_new_window": false,
 	"remember_open_files": true,
 	"remember_open_folders": true,
 	"save_on_focus_lost": true,

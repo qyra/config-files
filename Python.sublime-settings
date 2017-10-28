@@ -1,9 +1,6 @@
-// These settings override both User and Default settings for the Python syntax
 {
-	"auto_complete_triggers": [{"selector": "source.python", "characters": "."}],
+    "auto_complete_triggers": [{"selector": "source.python", "characters": "."}],
     "draw_white_space": "all",
-
-    // tabs and whitespace
     "auto_indent": true,
     "rulers": [79],
     "smart_indent": true,
@@ -12,6 +9,6 @@
     "use_tab_stops": true,
     "word_wrap": true,
     "wrap_width": 80,
-    "translate_tabs_to_spaces": false,
+    "translate_tabs_to_spaces": true,
 }
 
