@@ -1,0 +1,61 @@
+{
+    // Python Settings
+    "python.linting.lintOnSave": true,
+    "python.pythonPath": "/Users/karl/projects/entrupy/environments/vscode/bin/python",
+
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/Users/karl/projects/entrupy/environments/vscode/bin/pylint",
+    "python.linting.pylintArgs": [
+        "--disable=C0103,C0325,C0326,C0111"
+    ],
+
+    // General Settings
+    "editor.tabSize": 2,
+    "editor.rulers": [100],
+    "editor.renderWhitespace": "all",
+    "typescript.tsdk": "/Users/karl/projects/entrupy/app-dashboard-client/node_modules/typescript/lib/",
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    "editor.minimap.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    },
+
+    //Python Settings
+
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorCustomizations": {
+        "editor.selectionHighlightBackground": "#3c773d",
+        "editor.selectionBackground": "#0000DD"
+    },
+
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+
+    "files.exclude": {
+        "**/build/**": false,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+}
