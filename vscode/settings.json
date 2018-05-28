@@ -9,7 +9,6 @@
 
     // Linter Settings
     "python.linting.lintOnSave": true,
-    "python.pythonPath": "/home/karl/projects/entrupy/environments/vscode/bin/python",
     "python.linting.pylintEnabled": true,
     // "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
     "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
@@ -85,6 +84,5 @@
     "window.zoomLevel": 0,
     "gitlens.keymap": "chorded",
     "explorer.confirmDelete": false,
-    "workbench.colorTheme": "Monokai Dimmed",
     "gitlens.historyExplorer.enabled": true
 }
