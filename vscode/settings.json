@@ -1,13 +1,19 @@
 {
+    "remote.port": 52385,
+    "remote.host": "127.0.0.1",
+    "remote.onstartup": true,
+
     // Python Settings
-    "python.linting.lintOnSave": true,
     "python.pythonPath": "/Users/karl/projects/entrupy/environments/vscode/bin/python",
 
+
+    // Linter Settings
+    "python.linting.lintOnSave": true,
+    "python.pythonPath": "/home/karl/projects/entrupy/environments/vscode/bin/python",
     "python.linting.pylintEnabled": true,
-    "python.linting.pylintPath": "/Users/karl/projects/entrupy/environments/vscode/bin/pylint",
-    "python.linting.pylintArgs": [
-        "--disable=C0103,C0325,C0326,C0111"
-    ],
+    // "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
+    "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
+    "python.linting.pylintArgs": ["--rcfile=/home/karl/.pylintrc"],
 
     // General Settings
     "editor.tabSize": 2,
@@ -27,11 +33,15 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": true,
         "suppressWelcomeNotice": true
     },
 
-    //Python Settings
+    // "gitlens.codeLens.visibility": "off",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
 
     "[python]": {
         "editor.tabSize": 4,
@@ -47,8 +57,19 @@
     "markdown.extension.preview.autoShowPreviewToSide": true,
 
     "files.exclude": {
-        "**/build/**": false,
+        "**/alt-branches": true,
+        "**/appdb-cli": true,
+        "**/archive": true,
+        "**/variables/combined": true,
+        "**/dumps": true,
+        "**/dataprocessing": true,
+        "**/environments": true,
+
+        // "**/build": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
         "**/.git": true,
+        "**/.vscode": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
@@ -58,4 +79,12 @@
         "editor.tabSize": 4,
         "editor.insertSpaces": true
     },
+
+    // This is required because vscode will otherwise use scancodes - see https://github.com/Microsoft/vscode/issues/23991
+    "keyboard.dispatch": "keyCode",
+    "window.zoomLevel": 0,
+    "gitlens.keymap": "chorded",
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "gitlens.historyExplorer.enabled": true
 }
