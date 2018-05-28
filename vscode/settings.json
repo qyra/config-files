@@ -4,7 +4,7 @@
     "remote.onstartup": true,
 
     // Python Settings
-    "python.pythonPath": "/Users/karl/projects/entrupy/environments/vscode/bin/python",
+    "python.pythonPath": "/home/karl/projects/entrupy/environments/vscode/bin/python",
 
 
     // Linter Settings
@@ -18,7 +18,7 @@
     "editor.tabSize": 2,
     "editor.rulers": [100],
     "editor.renderWhitespace": "all",
-    "typescript.tsdk": "/Users/karl/projects/entrupy/app-dashboard-client/node_modules/typescript/lib/",
+    "typescript.tsdk": "/home/karl/projects/entrupy/app-dashboard-client/node_modules/typescript/lib/",
 
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
