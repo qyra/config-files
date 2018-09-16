@@ -1,0 +1,145 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "ctrl+d",
+    "command": "-deleteRight",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "deleteAllRight",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "-deleteAllRight",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+y",
+    "command": "redo",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-redo",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "editor.action.replaceOne",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-editor.action.replaceOne",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "ctrl+shift+cmd+r",
+    "command": "search.action.replaceAll",
+    "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+  },
+  {
+    "key": "alt+cmd+enter",
+    "command": "-search.action.replaceAll",
+    "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-deleteLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "search.action.replaceAllInFile",
+    "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "-search.action.replaceAllInFile",
+    "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "search.action.replace",
+    "when": "matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-search.action.replace",
+    "when": "matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "shift+f3",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestionOnEnter",
+    "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "acceptSelectedSuggestionOnEnter",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestionOnEnter",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  }
+]

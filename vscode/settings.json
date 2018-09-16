@@ -2,17 +2,19 @@
     "remote.port": 52385,
     "remote.host": "127.0.0.1",
     "remote.onstartup": true,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "deepIndent",
 
     // Python Settings
     "python.pythonPath": "/home/karl/projects/entrupy/environments/vscode/bin/python",
 
-
     // Linter Settings
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": true,
-    // "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
+    // "python.linting.pylintEnabled": false,
     "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
     "python.linting.pylintArgs": ["--rcfile=/home/karl/.pylintrc"],
+    "python.envFile": "/home/karl/projects/entrupy/variables/pylint.env",
 
     // General Settings
     "editor.tabSize": 2,
@@ -23,20 +25,7 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-
     "editor.minimap.enabled": false,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": true,
-        "suppressWelcomeNotice": true
-    },
 
     // "gitlens.codeLens.visibility": "off",
     "gitlens.codeLens.recentChange.enabled": false,
@@ -63,6 +52,8 @@
         "**/dumps": true,
         "**/dataprocessing": true,
         "**/environments": true,
+        "**/*.ipynb": true,
+        "**/package-lock.json": true,
 
         // "**/build": true,
         "**/__pycache__": true,
@@ -84,5 +75,10 @@
     "window.zoomLevel": 0,
     "gitlens.keymap": "chorded",
     "explorer.confirmDelete": false,
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+
+    // "rust.racer_completion": true
 }

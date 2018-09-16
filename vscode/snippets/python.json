@@ -1,0 +1,69 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Enable debugger": {
+		"prefix": "trace",
+		"body": [
+			"from pprint import pprint; import pdb; pdb.set_trace()"
+		],
+		"description": "Enable debugger"
+	},
+	"Enable debugger with gshow": {
+		"prefix": "gtrace",
+		"body": [
+			"from entrupy.dataset_image_ops.sessions.display_image import gshow",
+			"from pprint import pprint; import pdb; pdb.set_trace()"
+		],
+		"description": "Enable debugger"
+	},
+	"Except All": {
+		"prefix": "key",
+		"body": [
+			"except (KeyboardInterrupt, SystemExit):\n\traise\nexcept Exception"
+		],
+		"description": "Enable debugger"
+	},
+	"Disable Pylint": {
+		"prefix": "disable",
+		"body": [
+			"# pylint: disable="
+		],
+		"description": "Disable Pylint"
+	},
+
+	// Argparse Snippets
+	"Argparse Initialize": {
+		"prefix": "kjargparse",
+		"body": [
+			"parser = argparse.ArgumentParser(description='$1')",
+			"",
+			"options = parser.parse_args()",
+		],
+		"description": "Initialize Argparse"
+	},
+	"Argparse Boolean": {
+		"prefix": "kjargbool",
+		"body": [
+			"parser.add_argument('-$1', '--$2', metavar='$3', action='store_true' required=False, help='$4')"
+		],
+		"description": "Argparse Boolean"
+	},
+	"Argparse String": {
+		"prefix": "kjargstring",
+		"body": [
+			"parser.add_argument('-$1', '--$2', metavar='<$3>', required=True, help='$4')"
+		],
+		"description": "Argparse String"
+	},
+}
