@@ -1,0 +1,18 @@
+! Use xev to get the key code and bind it to a name
+! To test out a change without saving it to a file, you can use a command like: `xmodmap -e 'keycode 23 = Mode_switch ISO_Left_Tab Tab ISO_Left_Tab Tab ISO_Left_Tab'`
+
+! 108 is by default left alt
+keycode 108 = Meta_R
+! Clear keys associated with a modifier
+clear Mod1
+! Use Alt_L as the Mod1 key
+add Mod1 = Alt_L
+! Clear Mod3 (this is empty by default, but I want to make sure)
+clear Mod3
+! Bind the new key we just set up
+add Mod3 = Meta_R
+
+! TODO: Maybe add a hyper key as well?
+! keycode 105 is by default left control
+! keycode 105 = Hyper_L
+! Defaults for mod4        Super_L (0x85),  Super_R (0x86),  Super_L (0xce),  Hyper_L (0xcf)
