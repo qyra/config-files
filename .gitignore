@@ -1,3 +1,4 @@
 !.gitignore
 !*.sublime-settings
 !*.md
+.config/Code/User/workspaceStorage
