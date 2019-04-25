@@ -1,4 +1,36 @@
 {
+    // "editor.cursorWidth": 3,
+    "editor.cursorStyle": "block",
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": true,
+
+    "highlight-matching-tag.highlightFromContent": true,
+    "highlight-matching-tag.highlightSelfClosing": true,
+    "highlight-matching-tag.styles": {
+        "opening": {
+            "name": {
+              "surround": "green"
+            },
+            // "right": {
+            //     "surround": "green"
+            // }
+        },
+        "closing": {
+            "name": {
+              "surround": "cyan"
+            },
+            // "right": {
+            //     "surround": "orange"
+            // }
+        }
+    },
+
+    // Should speed up the terminal
+    "terminal.integrated.experimentalBufferImpl": "TypedArray",
+    "terminal.integrated.rendererType": "dom",
+
+    "currentFilePath.priorityInStatusBar": 100,
+    "currentFilePath.defaultPathStartsFrom": "rootDirectory",
     "remote.port": 52385,
     "remote.host": "127.0.0.1",
     "remote.onstartup": true,
@@ -6,30 +38,29 @@
     "editor.wrappingIndent": "deepIndent",
 
     // Python Settings
-    "python.pythonPath": "/home/karl/projects/entrupy/environments/vscode/bin/python",
+    "python.pythonPath": "/home/karl/projects/environments/entrupy2/bin/python",
 
     // Linter Settings
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": true,
     // "python.linting.pylintEnabled": false,
-    "python.linting.pylintPath": "/home/karl/projects/entrupy/environments/vscode/bin/pylint",
-    "python.linting.pylintArgs": ["--rcfile=/home/karl/.pylintrc"],
-    "python.envFile": "/home/karl/projects/entrupy/variables/pylint.env",
+    "python.linting.pylintPath": "/home/karl/projects/environments/entrupy2/bin/pylint",
+    "python.linting.pylintArgs": ["--rcfile=/home/karl/projects/config-files/.pylintrc"],
+    "python.envFile": "/home/karl/projects/variables/pylint.env",
 
     // General Settings
     "editor.tabSize": 2,
     "editor.rulers": [100],
     "editor.renderWhitespace": "all",
-    "typescript.tsdk": "/home/karl/projects/entrupy/app-dashboard-client/node_modules/typescript/lib/",
+    "typescript.tsdk": "/home/karl/projects/app-dashboard-client/node_modules/typescript/lib/",
 
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.minimap.enabled": false,
 
-    // "gitlens.codeLens.visibility": "off",
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.codeLens.enabled": false,
 
     "[python]": {
         "editor.tabSize": 4,
@@ -39,7 +70,10 @@
     "workbench.colorTheme": "Monokai Dimmed",
     "workbench.colorCustomizations": {
         "editor.selectionHighlightBackground": "#3c773d",
-        "editor.selectionBackground": "#0000DD"
+        "editor.selectionBackground": "#0000DD",
+        "editorCursor.foreground": "#00ffff",
+        "editorCursor.background": "#000000",
+        "terminalCursor.foreground": "#ffffff"
     },
 
     "markdown.extension.preview.autoShowPreviewToSide": true,
@@ -73,12 +107,14 @@
     // This is required because vscode will otherwise use scancodes - see https://github.com/Microsoft/vscode/issues/23991
     "keyboard.dispatch": "keyCode",
     "window.zoomLevel": 0,
-    "gitlens.keymap": "chorded",
     "explorer.confirmDelete": false,
-    "gitlens.historyExplorer.enabled": true,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
-
-    // "rust.racer_completion": true
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.heatmap.toggleMode": "window",
+    "gitlens.recentChanges.toggleMode": "window",
+    "vetur.completion.autoImport": false,
+    "vetur.completion.useScaffoldSnippets": false,
+    "vetur.validation.template": false,
+    "vetur.validation.style": false,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfPath": "/home/karl/projects/environments/entrupy2/bin/yapf",
 }

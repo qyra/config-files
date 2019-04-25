@@ -26,11 +26,18 @@
 		]
 	},
 	"Get path to the current script": {
-		"prefix": "kjscriptdir",
+		"prefix": "kjscriptpath",
 		"body": [
-			"SCRIPT_DIR=\"$( cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >/dev/null && pwd )\"",
+			"SCRIPT_PATH=\"${BASH_SOURCE[0]:-${(%):-%N}}\"",
 		],
 		"description": "Get path to the current script"
+	},
+	"Get directory of the current script": {
+		"prefix": "kjscriptdir",
+		"body": [
+			"SCRIPT_DIR=\"$(cd $(dirname ${BASH_SOURCE[0]:-${(%):-%N}}) >/dev/null && pwd)\"",
+		],
+		"description": "Get directory of the current script"
 	},
 	"Bash Header": {
 		"prefix": "kjheader",
