@@ -12,6 +12,12 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"Print Traceback": {
+		"prefix": "kjback",
+		"body": [
+			"traceback.print_exc()"
+		]
+	},
 	"Walk files": {
 		"prefix": "kjwalk",
 		"body": [
@@ -25,6 +31,13 @@
 		"prefix": "trace",
 		"body": [
 			"from pprint import pprint; import pdb; pdb.set_trace()"
+		],
+		"description": "Enable debugger"
+	},
+	"Enable ptpdb debugger": {
+		"prefix": "ptrace",
+		"body": [
+			"from pprint import pprint; import ptpdb; ptpdb.set_trace()"
 		],
 		"description": "Enable debugger"
 	},
@@ -50,7 +63,6 @@
 		],
 		"description": "Disable Pylint"
 	},
-
 	// Argparse Snippets
 	"Argparse Initialize": {
 		"prefix": "kjargparse",

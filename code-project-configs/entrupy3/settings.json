@@ -1,4 +1,5 @@
 {
-  "python.formatting.provider": "yapf",
   "python.pythonPath": "/home/karl/projects/environments/entrupy3/bin/python",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/home/karl/projects/environments/entrupy3/bin/black",
 }

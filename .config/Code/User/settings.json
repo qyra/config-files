@@ -1,4 +1,6 @@
 {
+    "editor.snippetSuggestions": "top",
+
     // "editor.cursorWidth": 3,
     "editor.cursorStyle": "block",
     "editor.occurrencesHighlight": false,
@@ -79,6 +81,7 @@
     "markdown.extension.preview.autoShowPreviewToSide": true,
 
     "files.exclude": {
+        "**/test-deploy/**": true,
         "**/alt-branches": true,
         "**/appdb-cli": true,
         "**/archive": true,
@@ -106,7 +109,7 @@
 
     // This is required because vscode will otherwise use scancodes - see https://github.com/Microsoft/vscode/issues/23991
     "keyboard.dispatch": "keyCode",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.heatmap.toggleMode": "window",
@@ -115,6 +118,7 @@
     "vetur.completion.useScaffoldSnippets": false,
     "vetur.validation.template": false,
     "vetur.validation.style": false,
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "black",
     "python.formatting.yapfPath": "/home/karl/projects/environments/entrupy2/bin/yapf",
+    "python.formatting.blackPath": "/home/karl/projects/environments/entrupy3/bin/black",
 }
