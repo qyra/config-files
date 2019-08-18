@@ -40,13 +40,13 @@
     "editor.wrappingIndent": "deepIndent",
 
     // Python Settings
-    "python.pythonPath": "/home/karl/projects/environments/entrupy2/bin/python",
+    // "python.pythonPath": "/home/karl/projects/environments/entrupy2/bin/python",
 
     // Linter Settings
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": true,
     // "python.linting.pylintEnabled": false,
-    "python.linting.pylintPath": "/home/karl/projects/environments/entrupy2/bin/pylint",
+    // "python.linting.pylintPath": "/home/karl/projects/environments/entrupy2/bin/pylint",
     "python.linting.pylintArgs": ["--rcfile=/home/karl/projects/config-files/.pylintrc"],
     "python.envFile": "/home/karl/projects/variables/pylint.env",
 
@@ -60,9 +60,6 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.minimap.enabled": false,
-
-    "gitlens.hovers.enabled": false,
-    "gitlens.codeLens.enabled": false,
 
     "[python]": {
         "editor.tabSize": 4,
@@ -100,7 +97,11 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/node_modules": true,
+        "**/docker/graylog": true,
+        "**/docker/redis": true
     },
     "[json]": {
         "editor.tabSize": 4,
@@ -109,11 +110,8 @@
 
     // This is required because vscode will otherwise use scancodes - see https://github.com/Microsoft/vscode/issues/23991
     "keyboard.dispatch": "keyCode",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.heatmap.toggleMode": "window",
-    "gitlens.recentChanges.toggleMode": "window",
     "vetur.completion.autoImport": false,
     "vetur.completion.useScaffoldSnippets": false,
     "vetur.validation.template": false,
@@ -121,4 +119,15 @@
     "python.formatting.provider": "black",
     "python.formatting.yapfPath": "/home/karl/projects/environments/entrupy2/bin/yapf",
     "python.formatting.blackPath": "/home/karl/projects/environments/entrupy3/bin/black",
+
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.blame.avatars": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.heatmap.toggleMode": "window",
+    "gitlens.recentChanges.toggleMode": "window",
+    "gitlens.blame.heatmap.location": "left",
+    "gitlens.blame.toggleMode": "window",
+    "editor.autoIndent": true
 }

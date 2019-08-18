@@ -12,6 +12,14 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"source venv": {
+		"prefix": "kjvenv",
+		"body": [
+			"export VIRTUAL_ENV_DISABLE_PROMPT=1",
+			"source \\$ENTRUPY_PYTHON_ENVS/$1/bin/activate"
+		],
+		"description": "Source a virtual env"
+	},
 	"Test if variable is unset": {
 		"prefix": "kjunset",
 		"body": [

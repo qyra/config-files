@@ -34,25 +34,19 @@
 		],
 		"description": "Enable debugger"
 	},
+	"Gshow + ptpdb debugger": {
+		"prefix": "gtrace",
+		"body": [
+			"from entrupy.dataset_image_ops.sessions.display_image import gshow, set_gshow_close_default",
+			"set_gshow_close_default(False)",
+			"from pprint import pprint; import pdb; pdb.set_trace()"
+		],
+		"description": "Gshow + ptpdb debugger"
+	},
 	"Enable ptpdb debugger": {
 		"prefix": "ptrace",
 		"body": [
 			"from pprint import pprint; import ptpdb; ptpdb.set_trace()"
-		],
-		"description": "Enable debugger"
-	},
-	"Enable debugger with gshow": {
-		"prefix": "gtrace",
-		"body": [
-			"from entrupy.dataset_image_ops.sessions.display_image import gshow",
-			"from pprint import pprint; import pdb; pdb.set_trace()"
-		],
-		"description": "Enable debugger"
-	},
-	"Except All": {
-		"prefix": "kjexcept",
-		"body": [
-			"except (KeyboardInterrupt, SystemExit):\n\traise\nexcept Exception"
 		],
 		"description": "Enable debugger"
 	},
@@ -76,14 +70,14 @@
 	"Argparse Boolean": {
 		"prefix": "kjargbool",
 		"body": [
-			"parser.add_argument('--$1', '-$2', action='store_true', required=False, help='$4')"
+			"parser.add_argument('--$1', action='store_true', required=False, help='$4')"
 		],
 		"description": "Argparse Boolean"
 	},
 	"Argparse String": {
 		"prefix": "kjargstring",
 		"body": [
-			"parser.add_argument('--$1', '-$2', metavar='$1', required=True, help='$4')"
+			"parser.add_argument('--$1', metavar='$1', required=True, help='$4')"
 		],
 		"description": "Argparse String"
 	},
