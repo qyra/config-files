@@ -1,6 +1,5 @@
 {
   "python.pythonPath": "/home/karl/projects/environments/entrupy3/bin/python",
   "python.linting.pylintPath": "/home/karl/projects/environments/entrupy3/bin/pylint",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/home/karl/projects/environments/entrupy3/bin/black",
+  "python.linting.pylintArgs": ["--rcfile=/home/karl/projects/libappdb-core/.pylintrc"]
 }

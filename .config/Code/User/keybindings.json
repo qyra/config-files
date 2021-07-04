@@ -195,5 +195,160 @@
   {
     "key": "alt+[",
     "command": "editor.action.previousMatchFindAction"
-  }
+},
+{
+    "key": "shift+enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+},
+{
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+},
+{
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+},
+{
+    "key": "ctrl+8",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+},
+{
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+},
+{
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+},
+{
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+},
+{
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+},
+{
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+9",
+    "command": "-workbench.action.lastEditorInGroup"
+},
+{
+    "key": "ctrl+9",
+    "command": "-workbench.action.lastEditorInGroup"
+},
+{
+    "key": "ctrl+8",
+    "command": "-workbench.action.focusEighthEditorGroup"
+},
+{
+    "key": "ctrl+8",
+    "command": "-workbench.action.focusEighthEditorGroup"
+},
+{
+    "key": "ctrl+8",
+    "command": "-workbench.action.focusEighthEditorGroup"
+},
+{
+    "key": "ctrl+9",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+},
+{
+    "key": "end",
+    "command": "-cursorEnd",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+shift+9",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+},
+{
+    "key": "shift+end",
+    "command": "-cursorEndSelect",
+    "when": "textInputFocus"
+},
+{
+    "key": "ctrl+shift+8",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+},
+{
+    "key": "shift+home",
+    "command": "-cursorHomeSelect",
+    "when": "textInputFocus"
+},
+{
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+alt+p",
+    "command": "copyFilePath",
+    "when": "!editorFocus"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+},
+{
+    "key": "ctrl+f8",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus"
+},
+{
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+},
+{
+    "key": "ctrl+shift+f8",
+    "command": "editor.action.marker.prev",
+    "when": "editorFocus"
+},
+{
+    "key": "shift+alt+f8",
+    "command": "-editor.action.marker.prev",
+    "when": "editorFocus"
+}
 ]

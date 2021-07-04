@@ -31,7 +31,7 @@ unsafe-load-any-extension=no
 # be loaded. Extensions are loading into the active Python interpreter and may
 # run arbitrary code
 # qyra: Added this because cv2 and numpy both have binary to load
-extension-pkg-whitelist=cv2,numpy,np
+extension-pkg-whitelist=cv2,numpy,np,psycopg2.errors
 
 
 [MESSAGES CONTROL]
@@ -55,14 +55,8 @@ enable=implicit-str-concat-in-sequence
 # no Warning level messages displayed, use"--disable=all --enable=classes
 # --disable=W"
 
-disable=C0325,C0111,C0103,W0621,W0621,C0301,C0113,C0413
-#    C0325, # superfluous-parens,
-#    C0111, # missing docstring
-#    C0103, # invalid-name
-#    W0621, # redefined outer name
-#    C0301, # line-too-long
-#    C0113, # unneeded-not (Has a lot of FPs)
-#    C0413, # imports should be at the top of the file
+# Normal Operation
+disable=superfluous-parens,missing-docstring,invalid-name,redefined-outer-name,line-too-long,unneeded-not,wrong-import-position,unsubscriptable-object,len-as-condition,broad-except,too-few-public-methods,no-else-return,wrong-import-order,import-outside-toplevel,no-else-raise,unused-import,no-self-use,pointless-string-statement,useless-object-inheritance,fixme,duplicate-code,consider-iterating-dictionary,consider-using-in,duplicate-string-formatting-argument,unused-argument,too-many-arguments,too-many-locals,too-many-branches,too-many-statements,raise-missing-from
 
 [REPORTS]
 
@@ -101,8 +95,8 @@ logging-modules=logging
 [MISCELLANEOUS]
 
 # List of note tags to take in consideration, separated by a comma.
-notes=FIXME,XXX,TODO
-
+notes=FIXME,XXX
+# Disabling TODO, only show a linter message for FIXME
 
 [SIMILARITIES]
 
