@@ -40,17 +40,14 @@
     "editor.wrappingIndent": "deepIndent",
 
     // Python Settings
-    "python.pythonPath": "/home/karl/projects/environments/entrupy3/bin/python",
     "python.languageServer": "Jedi",
 
     // Linter Settings
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": true,
-    // "python.linting.pylintEnabled": false,
-    "python.linting.pylintPath": "/home/karl/projects/environments/entrupy3/bin/pylint",
-    "python.linting.pylintArgs": ["--rcfile=/home/karl/projects/config-files/.pylintrc"],
-    "python.envFile": "/home/karl/projects/variables/pylint.env",
-    "editor.rulers": [100],
+    // "pylint.args": ["--rcfile=/home/karl/projects/config-files/vscode-pylintrc"],
+    // "python.envFile": "/home/karl/projects/variables/pylint.env",
+    // "pylint.interpreter": ["/home/karl/projects/environments/entrupy38/bin/python"],
+    // "pylint.importStrategy": "fromEnvironment",
+    "editor.rulers": [83],
     "editor.renderWhitespace": "all",
 
     "files.trimTrailingWhitespace": true,
@@ -59,15 +56,11 @@
     "editor.minimap.enabled": false,
 
     "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    // "[python]": {
-    //     "editor.tabSize": 4,
-    //     "editor.insertSpaces": true
-    // },
-    // "[json]": {
-    //     "editor.tabSize": 4,
-    //     "editor.insertSpaces": true
-    // },
+    "editor.tabSize": 2,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
     "[javascript]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2
@@ -81,6 +74,10 @@
         "editor.tabSize": 2
     },
     "[vue]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[text]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2
     },
@@ -103,6 +100,7 @@
     "markdown.extension.preview.autoShowPreviewToSide": true,
 
     "files.exclude": {
+        // "**/docs": true, // Temporarily exclude.
         "**/__pycache__": true,
         "**/.DS_Store": true,
         "**/.git": true,
@@ -171,8 +169,7 @@
     "gitlens.recentChanges.toggleMode": "window",
     "gitlens.blame.heatmap.location": "left",
     "gitlens.blame.toggleMode": "window",
-    "editor.autoIndent": true,
-    "editor.detectIndentation": false,
+    "editor.autoIndent": "full",
     "csv-preview.lineNumbers": "ordinal",
     "csv-preview.resizeColumns": "all",
     "ActiveFileInStatusBar.color": "yellow",
@@ -206,6 +203,7 @@
     "editor.suggest.showVariables": false,
     "editor.suggest.showWords": false,
     "editor.wordBasedSuggestions": false,
+    "editor.autoClosingQuotes": "never",
     "errorLens.delay": 1,
 
     "[yaml]": {
@@ -230,10 +228,18 @@
     "numberedBookmarks.showBookmarkNotDefinedWarning": true,
     "numberedBookmarks.navigateThroughAllFiles": "replace",
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.enabled": false,
-    "window.zoomLevel": 3,
-    "python.defaultInterpreterPath": "/home/karl/projects/environments/entrupy3/bin/python",
+    "python.defaultInterpreterPath": "/home/karl/projects/environments/entrupy38/bin/python",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.detectIndentation": false,
+    "files.simpleDialog.enable": true,
+    "bookmarks.sideBar.expanded": true,
+    "git.openRepositoryInParentFolders": "never",
+    "window.zoomLevel": -1,
 }

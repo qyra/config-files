@@ -56,7 +56,7 @@ enable=implicit-str-concat-in-sequence
 # --disable=W"
 
 # Normal Operation
-disable=superfluous-parens,missing-docstring,invalid-name,redefined-outer-name,line-too-long,unneeded-not,wrong-import-position,unsubscriptable-object,len-as-condition,broad-except,too-few-public-methods,no-else-return,wrong-import-order,import-outside-toplevel,no-else-raise,unused-import,no-self-use,pointless-string-statement,useless-object-inheritance,fixme,duplicate-code,consider-iterating-dictionary,consider-using-in,duplicate-string-formatting-argument,unused-argument,too-many-arguments,too-many-locals,too-many-branches,too-many-statements,raise-missing-from,unused-variable,inconsistent-return-statements,too-many-instance-attributes,f-string-without-interpolation,protected-access,chained-comparison,use-sequence-for-iteration,consider-using-f-string
+disable=superfluous-parens,missing-docstring,invalid-name,redefined-outer-name,line-too-long,unneeded-not,wrong-import-position,unsubscriptable-object,len-as-condition,broad-except,too-few-public-methods,no-else-return,wrong-import-order,import-outside-toplevel,no-else-raise,unused-import,no-self-use,pointless-string-statement,useless-object-inheritance,fixme,duplicate-code,consider-iterating-dictionary,consider-using-in,duplicate-string-formatting-argument,unused-argument,too-many-arguments,too-many-locals,too-many-branches,too-many-statements,raise-missing-from,unused-variable,inconsistent-return-statements,too-many-instance-attributes,f-string-without-interpolation,protected-access,chained-comparison,use-sequence-for-iteration,consider-using-f-string,relative-beyond-top-level
 
 [REPORTS]
 
