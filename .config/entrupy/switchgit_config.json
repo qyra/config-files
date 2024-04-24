@@ -1,0 +1,234 @@
+{
+    "inherits": [
+        "{ENTRUPY_PROJECTS}/local-development-scripts/shared_configs/switchgit/dataset.json"
+    ],
+    "commands": {
+        "webhook-macro-luxury-authentication": {
+          "assign": {
+            "libnotification": "master",
+            "webservice-utils": "master",
+            "app-api-public": "master",
+            "app-notification-api": "master",
+            "app-cache-ingestor": "webhook-macro-luxury-authentication"
+          },
+          "inherit": "development",
+          "MERGED": {
+            "local-development-scripts": "webhook-macro-luxury-authentication"
+          }
+        },
+        "improve-logging-reliability": {
+          "assign": {
+            "analytics-ingestor": "improve-logging-reliability"
+          },
+          "MERGED": {
+            "libappdb-core": "improve-logging-reliability",
+            "app-cache-ingestor": "merged into webhook-macro-luxury-authentication"
+          },
+          "inherit": "development"
+        },
+        "docker-compose-debugging": {
+          "assign": {
+            "app-notification-example-endpoint": "docker-compose-debugging"
+          },
+          "inherit": "development"
+        },
+        "socketio-upgrade": {
+          "assign": {
+            "app-dashboard-v2": "dashboard-backend-update-karl",
+            "python-socketio": "dashboard-backend-upgrade",
+            "app-cache-ingestor": "dashboard-backend-update-karl",
+            "Flask-SocketIO": "dashboard-backend-upgrade",
+            "app-state-service": "dashboard-backend-upgrade"
+          },
+          "MERGED": {
+            "libappdb-core": "dashboard-backend-update-karl"
+          },
+          "inherit": "development"
+        },
+        "development": {
+            "assign": {
+                "ray": "development",
+                "macro_fingerprint": "ray-macrofp-drew",
+                "ray-job-broker": "development",
+                "appsmith": "entrupy-development",
+                "account-admin": "development",
+                "account-api": "development",
+                "account-core": "development",
+                "account-payment-queue-processor": "development",
+                "app-api-public": "development",
+                "app-cache-ingestor": "development",
+                "app-dashboard-v2": "development",
+                "app-endpoint": "development",
+                "app-model-service": "development",
+                "app-notification-api": "development",
+                "app-state-service": "development",
+                "async-interval-cache": "development",
+                "auth-server": "development",
+                "dataset-agent": "development",
+                "dataset-configuration": "development",
+                "dataset-devtools": "development",
+                "dataset-image-ops": "development",
+                "dataset-task-daemon": "development",
+                "dslib": "development",
+                "entrupy-api-internal-python": "development",
+                "fingerprint": "development",
+                "graph-core": "development",
+                "graphlib": "development",
+                "libappdb-core": "development",
+                "libnotification": "development",
+                "local-development-scripts": "master",
+                "lambda-scripts": "development",
+                "product-catalog": "development",
+                "push-notification-broker": "development",
+                "sns-listener": "development",
+                "text-field-validator": "development",
+                "webservice-utils": "development",
+                "Flask-SocketIO": "development",
+                "dataset-target_thumbnail-generation": "development",
+                "report-service": "development",
+                "appsmith-customer-dashboard-api": "development"
+            },
+            "inherit": "master"
+        },
+        "master": {
+            "assign": {
+                "graph-monitor": "master",
+                "infrastructure": "master",
+                "dataset-task-daemon": "master",
+                "entrupy-api-internal-python": "master",
+                "app-notification-api": "master",
+                "app-notification-worker": "master",
+                "libnotification": "master",
+                "webservice-utils": "master",
+                "app-state-service": "master",
+                "Flask-SocketIO": "master",
+                "app-cache-ingestor": "master",
+                "async-interval-cache": "master",
+                "graphlib": "master",
+                "libappdb-core": "master",
+                "product-catalog": "master",
+                "python-socketio": "master",
+                "text-field-validator": "master",
+                "variables": "master",
+                "via-api": "master",
+                "dataset-target_classify_keras-patches": "master",
+                "dataset-devtools": "master",
+                "app-dashboard-v2": "master",
+                "dataset-target_thumbnail-generation": "master",
+                "lambda-scripts": "master"
+            }
+        }
+    },
+    "repos": {
+        "Flask-SocketIO": {
+            "git_url": "git@github.com:entrupy/Flask-SocketIO.git"
+        },
+        "app-api-public": {
+            "git_url": "git@github.com:entrupy/app-api-public.git"
+        },
+        "app-cache-ingestor": {
+            "git_url": "git@github.com:entrupy/app-cache-ingestor.git"
+        },
+        "app-dashboard-v2": {
+            "git_url": "git@github.com:entrupy/app-dashboard-v2.git"
+        },
+        "app-endpoint": {
+            "git_url": "git@github.com:entrupy/app-endpoint.git"
+        },
+        "app-model-service": {
+            "git_url": "git@github.com:entrupy/app-model-service.git"
+        },
+        "app-notification-api": {
+            "git_url": "git@github.com:entrupy/app-notification-api.git"
+        },
+        "app-notification-worker": {
+            "git_url": "git@github.com:entrupy/app-notification-worker.git"
+        },
+        "app-state-service": {
+            "git_url": "git@github.com:entrupy/app-state-service.git"
+        },
+        "async-interval-cache": {
+            "git_url": "git@github.com:entrupy/async-interval-cache.git"
+        },
+        "dataset-agent": {
+            "git_url": "git@github.com:entrupy/dataset-agent.git"
+        },
+        "dataset-configuration": {
+            "git_url": "git@github.com:entrupy/dataset-configuration.git"
+        },
+        "dataset-devtools": {
+            "git_url": "git@github.com:entrupy/dataset-devtools.git"
+        },
+        "dataset-image-ops": {
+            "git_url": "git@github.com:entrupy/dataset-image-ops.git"
+        },
+        "dataset-target": {
+            "git_url": "git@github.com:entrupy/dataset-target.git"
+        },
+        "dataset-target_template_low-resolution": {
+            "git_url": "git@github.com:entrupy/dataset-target_template_low-resolution.git"
+        },
+        "dataset-task-daemon": {
+            "git_url": "git@github.com:entrupy/dataset-task-daemon.git"
+        },
+        "dslib": {
+            "git_url": "git@github.com:entrupy/dslib.git"
+        },
+        "entrupy-api-internal-python": {
+            "git_url": "git@github.com:entrupy/entrupy-api-internal-python.git"
+        },
+        "gpu-image-ops": {
+            "git_url": "git@github.com:entrupy/gpu-image-ops.git"
+        },
+        "graphlib": {
+            "git_url": "git@github.com:entrupy/graphlib.git"
+        },
+        "image-similarity-filter": {
+            "disable": true,
+            "git_url": "git@github.com:entrupy/image-similarity-filter.git"
+        },
+        "libappdb-core": {
+            "git_url": "git@github.com:entrupy/libappdb-core.git"
+        },
+        "libnotification": {
+            "git_url": "git@github.com:entrupy/libnotification.git"
+        },
+        "local-development-scripts": {
+            "git_url": "git@github.com:entrupy/local-development-scripts.git"
+        },
+        "product-catalog": {
+            "git_url": "git@github.com:entrupy/product-catalog.git"
+        },
+        "python-socketio": {
+            "git_url": "git@github.com:entrupy/python-socketio.git"
+        },
+        "scikit-cuda": {
+            "git_url": "git@github.com:entrupy/scikit-cuda.git"
+        },
+        "sns-listener": {
+            "git_url": "git@github.com:entrupy/sns-listener.git"
+        },
+        "text-field-validator": {
+            "git_url": "git@github.com:entrupy/text-field-validator.git"
+        },
+        "variables": {},
+        "via-api": {
+            "git_url": "git@github.com:entrupy/via-api.git"
+        },
+        "webservice-utils": {
+            "git_url": "git@github.com:entrupy/webservice-utils.git"
+        },
+        "graph-core": {
+            "git_url": "git@github.com:entrupy/graph-core.git"
+        },
+        "appsmith": {
+            "git_url": "git@github.com:entrupy/appsmith.git"
+        },
+        "report-service": {
+            "git_url": "git@github.com:entrupy/report-service.git"
+        },
+        "entrupy-pgutil": {
+            "git_url": "git@github.com:entrupy/entrupy-pgutil.git"
+        }
+    }
+}

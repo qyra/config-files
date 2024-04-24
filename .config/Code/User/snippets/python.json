@@ -18,6 +18,12 @@
             "print('$1 took: {}ms'.format(round((time.time() - t0) * 1000, 3)))",
         ]
     },
+    "kjencoding": {
+      "prefix": "kjencoding",
+      "body": [
+          ", encoding=\"utf-8\""
+      ]
+    },
     "kjmkdir": {
         "prefix": "kjmkdir",
         "body": [
