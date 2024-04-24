@@ -47,6 +47,9 @@
         },
         "development": {
             "assign": {
+                "app-notification-worker": "development",
+                "entrupy-pgutil": "development",
+                "app-notification-example-endpoint": "development",
                 "ray": "development",
                 "macro_fingerprint": "ray-macrofp-drew",
                 "ray-job-broker": "development",
@@ -222,13 +225,48 @@
             "git_url": "git@github.com:entrupy/graph-core.git"
         },
         "appsmith": {
-            "git_url": "git@github.com:entrupy/appsmith.git"
+            "git_url": "git@github.com:entrupy/appsmith.git",
+            "branch": "entrupy-development"
         },
         "report-service": {
             "git_url": "git@github.com:entrupy/report-service.git"
         },
         "entrupy-pgutil": {
             "git_url": "git@github.com:entrupy/entrupy-pgutil.git"
+        },
+        "dataset-target_thumbnail-generation": {
+            "git_url": "git@github.com:entrupy/dataset-target_thumbnail-generation.git"
+        },
+        "lambda-scripts": {
+            "git_url": "git@github.com:entrupy/lambda-scripts.git"
+        },
+        "ray": {
+          "git_url": "git@github.com:entrupy/ray.git"
+        },
+        "ray-job-broker": {
+          "git_url": "git@github.com:entrupy/ray-job-broker.git"
+        },
+        "account-admin": {
+          "git_url": "git@github.com:entrupy/account-admin.git"
+        },
+        "account-core": {
+          "git_url": "git@github.com:entrupy/account-core.git"
+        },
+        "account-payment-queue-processor": {
+          "git_url": "git@github.com:entrupy/account-payment-queue-processor.git"
+        },
+        "auth-server": {
+          "git_url": "git@github.com:entrupy/auth-server.git"
+        },
+        "push-notification-broker": {
+          "git_url": "git@github.com:entrupy/push-notification-broker.git"
+        },
+        "appsmith-customer-dashboard-api": {
+          "git_url": "git@github.com:entrupy/appsmith-customer-dashboard-api.git"
+        },
+        "blur-detection": {
+          "git_url": "git@github.com:entrupy/blur-detection.git",
+          "disable": true
         }
     }
 }
