@@ -3,45 +3,52 @@
         "{ENTRUPY_PROJECTS}/local-development-scripts/shared_configs/switchgit/dataset.json"
     ],
     "commands": {
-        "webhook-macro-luxury-authentication": {
+        "analytics-feature-flags": {
           "assign": {
-            "libnotification": "master",
-            "webservice-utils": "master",
-            "app-api-public": "master",
-            "app-notification-api": "master",
-            "app-cache-ingestor": "webhook-macro-luxury-authentication"
-          },
-          "inherit": "development",
-          "MERGED": {
-            "local-development-scripts": "webhook-macro-luxury-authentication"
-          }
-        },
-        "improve-logging-reliability": {
-          "assign": {
-            "analytics-ingestor": "improve-logging-reliability"
-          },
-          "MERGED": {
-            "libappdb-core": "improve-logging-reliability",
-            "app-cache-ingestor": "merged into webhook-macro-luxury-authentication"
+            "analytics-ingestor": "analytics-feature-flags",
+            "local-development-scripts": "analytics-feature-flags"
           },
           "inherit": "development"
         },
-        "docker-compose-debugging": {
+        "autogenerate-sneaker-config": {
           "assign": {
+            "app-model-service": "EINF-441/sneaker-dynamic-config-generation",
+            "app-endpoint": "kassie/features/EINF-180-deploy-3.11"
+          },
+          "inherit": "development"
+        },
+        "analytics-product-access": {
+          "assign": {
+            "libappdb-core": "EINF-440/make-libappdb-core-use-logger-consistently",
+            "app-cache-ingestor": "fetch-missing-orgs-v2"
+          },
+          "inherit": "development"
+        },
+        "fetch-missing-orgs-v2": {
+          "assign": {
+            "libappdb-core": "EINF-440/make-libappdb-core-use-logger-consistently",
+            "app-cache-ingestor": "fetch-missing-orgs-v2"
+          },
+          "inherit": "development"
+        },
+        "backups": {
+          "assign": {
+            "infrastructure": "dynamodb-table-validation"
+          },
+          "inherit": "development"
+        },
+        "mac-webhooks": {
+          "assign": {
+            "app-notification-api": "mac-webhooks",
+            "local-development-scripts": "development",
+            "app-notification-worker": "development",
+            "entrupy-pgutil": "development",
+            "app-cache-ingestor": "development",
+            "entrupy-api-internal-python": "development",
+            "libnotification": "development",
+            "webservice-utils": "development",
+            "app-api-public": "development",
             "app-notification-example-endpoint": "docker-compose-debugging"
-          },
-          "inherit": "development"
-        },
-        "socketio-upgrade": {
-          "assign": {
-            "app-dashboard-v2": "dashboard-backend-update-karl",
-            "python-socketio": "dashboard-backend-upgrade",
-            "app-cache-ingestor": "dashboard-backend-update-karl",
-            "Flask-SocketIO": "dashboard-backend-upgrade",
-            "app-state-service": "dashboard-backend-upgrade"
-          },
-          "MERGED": {
-            "libappdb-core": "dashboard-backend-update-karl"
           },
           "inherit": "development"
         },
@@ -51,7 +58,6 @@
                 "entrupy-pgutil": "development",
                 "app-notification-example-endpoint": "development",
                 "ray": "development",
-                "macro_fingerprint": "ray-macrofp-drew",
                 "ray-job-broker": "development",
                 "appsmith": "entrupy-development",
                 "account-admin": "development",
@@ -112,7 +118,6 @@
                 "product-catalog": "master",
                 "python-socketio": "master",
                 "text-field-validator": "master",
-                "variables": "master",
                 "via-api": "master",
                 "dataset-target_classify_keras-patches": "master",
                 "dataset-devtools": "master",
