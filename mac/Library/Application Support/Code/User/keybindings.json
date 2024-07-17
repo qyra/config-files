@@ -215,11 +215,11 @@
     "command": "-acceptSelectedSuggestion",
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
 },
-{
-    "key": "home",
-    "command": "-cursorHome",
-    "when": "textInputFocus"
-},
+// {
+//     "key": "home",
+//     "command": "-cursorHome",
+//     "when": "textInputFocus"
+// },
 {
     "key": "ctrl+9",
     "command": "-workbench.action.lastEditorInGroup"
@@ -228,31 +228,31 @@
     "key": "ctrl+8",
     "command": "-workbench.action.focusEighthEditorGroup"
 },
-{
-    "key": "end",
-    "command": "cursorEnd",
-    "when": "textInputFocus"
-},
-{
-    "key": "end",
-    "command": "-cursorEnd",
-    "when": "textInputFocus"
-},
-{
-    "key": "shift+end",
-    "command": "cursorEndSelect",
-    "when": "textInputFocus"
-},
-{
-    "key": "shift+end",
-    "command": "-cursorEndSelect",
-    "when": "textInputFocus"
-},
-{
-    "key": "shift+home",
-    "command": "cursorHomeSelect",
-    "when": "textInputFocus"
-},
+// {
+//     "key": "end",
+//     "command": "cursorEnd",
+//     "when": "textInputFocus"
+// },
+// {
+//     "key": "end",
+//     "command": "-cursorEnd",
+//     "when": "textInputFocus"
+// },
+// {
+//     "key": "shift+end",
+//     "command": "cursorEndSelect",
+//     "when": "textInputFocus"
+// },
+// {
+//     "key": "shift+end",
+//     "command": "-cursorEndSelect",
+//     "when": "textInputFocus"
+// },
+// {
+//     "key": "shift+home",
+//     "command": "cursorHomeSelect",
+//     "when": "textInputFocus"
+// },
 {
     "key": "alt+up",
     "command": "-editor.action.moveLinesUpAction",
@@ -348,46 +348,46 @@
   "command": "-deleteWordLeft",
   "when": "textInputFocus && !editorReadonly"
 },
-{
-  "key": "cmd+right",
-  "command": "-cursorEnd",
-  "when": "textInputFocus"
-},
-{
-  "key": "cmd+left",
-  "command": "-cursorHome",
-  "when": "textInputFocus"
-},
-{
-  "key": "shift+cmd+left",
-  "command": "-cursorHomeSelect",
-  "when": "textInputFocus"
-},
-{
-  "key": "shift+cmd+right",
-  "command": "-cursorEndSelect",
-  "when": "textInputFocus"
-},
-{
-  "key": "cmd+left",
-  "command": "cursorWordLeft",
-  "when": "textInputFocus"
-},
-{
-  "key": "shift+cmd+left",
-  "command": "cursorWordLeftSelect",
-  "when": "textInputFocus"
-},
-{
-  "key": "cmd+right",
-  "command": "cursorWordEndRight",
-  "when": "textInputFocus"
-},
-{
-  "key": "shift+cmd+right",
-  "command": "cursorWordEndRightSelect",
-  "when": "textInputFocus"
-},
+// {
+//   "key": "cmd+right",
+//   "command": "-cursorEnd",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "cmd+left",
+//   "command": "-cursorHome",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "cmd+left",
+//   "command": "cursorWordLeft",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "shift+cmd+left",
+//   "command": "-cursorHomeSelect",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "shift+cmd+right",
+//   "command": "-cursorEndSelect",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "shift+cmd+left",
+//   "command": "cursorWordLeftSelect",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "cmd+right",
+//   "command": "cursorWordEndRight",
+//   "when": "textInputFocus"
+// },
+// {
+//   "key": "shift+cmd+right",
+//   "command": "cursorWordEndRightSelect",
+//   "when": "textInputFocus"
+// },
 {
   "key": "cmd+9",
   "command": "cursorHome",
@@ -398,9 +398,9 @@
   "command": "cursorHomeSelect",
   "when": "textInputFocus"
 },
-{
-  "key": "home",
-  "command": "cursorHome",
-  "when": "textInputFocus"
-}
+// {
+//   "key": "home",
+//   "command": "cursorHome",
+//   "when": "textInputFocus"
+// }
 ]

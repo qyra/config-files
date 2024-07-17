@@ -5,8 +5,15 @@
     "commands": {
         "analytics-feature-flags": {
           "assign": {
-            "analytics-ingestor": "analytics-feature-flags",
-            "local-development-scripts": "analytics-feature-flags"
+            "account-api": "analytics-feature-flags",
+            "analytics-ingestor": "analytics-feature-flags"
+          },
+          "inherit": "development"
+        },
+        "EINF-427-deploy-require-prod-libraries": {
+          "assign": {
+            "app-state-service": "EINF-427-deploy-require-prod-libraries",
+            "local-development-scripts": "EINF-427-deploy-require-prod-libraries"
           },
           "inherit": "development"
         },

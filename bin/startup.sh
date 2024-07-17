@@ -6,12 +6,21 @@ make create-dynamodb-tables
 make create-s3-buckets
 
 echo "Flushing, and importing app-api-public data (Dev)"
-time erun import -i $ENTRUPY_PROJECTS/app-api-public/tests/data/test-dumps/public_api-test-dump__2024-04-09__karl.dump/dev -d app --quiet --targets --flush
+cd $ENTRUPY_PROJECTS/local-development-scripts/dynamodb
+poetry env use python3.11
 
-echo "Importing app-api-public data (Prod)"
-time erun import -i $ENTRUPY_PROJECTS/app-api-public/tests/data/test-dumps/public_api-test-dump__2024-04-09__karl.dump/prod -d app --quiet --targets
+# Required for public API tests.
+DUMP_PATH="$ENTRUPY_PROJECTS/app-api-public/tests/data/test-dumps/public_api-test-dump__2024-04-23__karl.dump/dev"
+time $ENTRUPY_PROJECTS/local-development-scripts/dynamodb/import_dump_poetry.sh -i $DUMP_PATH -d app --quiet --targets --flush
 
-# echo "Importing app-endpoint data"
-# $ENTRUPY_PROJECTS/app-endpoint/tests_v2/data/import_test_data.sh
+DUMP_PATH="$ENTRUPY_PROJECTS/app-api-public/tests/data/test-dumps/public_api-test-dump__2024-04-23__karl.dump/prod"
+time $ENTRUPY_PROJECTS/local-development-scripts/dynamodb/import_dump_poetry.sh -i $DUMP_PATH -d app --quiet --targets
+
+# # Required for app-model-service real item tests?
+# DUMP_PATH="/Users/karl/data/v2-dumps/2023-10-13-ams-dev-test-items"
+# time $ENTRUPY_PROJECTS/local-development-scripts/dynamodb/import_dump_poetry.sh -i $DUMP_PATH -d app --quiet --targets
+
+# DUMP_PATH="/Users/karl/data/v2-dumps/2023-11-29-ams-prod-test-items"
+# time $ENTRUPY_PROJECTS/local-development-scripts/dynamodb/import_dump_poetry.sh -i $DUMP_PATH -d app --quiet --targets
 
 echo "Import complete"
