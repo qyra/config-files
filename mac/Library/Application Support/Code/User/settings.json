@@ -1,0 +1,210 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "security.workspace.trust.untrustedFiles": "open",
+
+    "editor.snippetSuggestions": "top",
+
+    // "editor.cursorWidth": 3,
+    "editor.cursorStyle": "block",
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": true,
+
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "deepIndent",
+
+    // Python Settings
+    // "python.pythonPath": "/Users/karl/projects/environments/entrupy3/bin/python",
+    "python.languageServer": "Pylance",
+    // "python.defaultInterpreterPath": "/Users/karl/projects/environments/entrupy3/bin/python",
+    // Python autoimport completions
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.userFileIndexingLimit": -1,
+    "python.analysis.persistAllIndices": true,
+    // "python.analysis.packageIndexDepths": [
+    //     {
+    //         "name": "entrupy",
+    //         "depth": 50,
+    //         "includeAllSymbols": true,
+    //     }
+    // ],
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.cacheLSPData": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+    // "python.envFile": "/Users/karl/projects/variables/pylint.env",
+
+    // Display / Format Settings
+    "editor.rulers": [83],
+    "editor.renderWhitespace": "all",
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.minimap.enabled": false,
+
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[vue]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[text]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+
+    "files.associations": {
+        "*.boto.json": "ndjson",
+        "*.jsonl": "ndjson",
+        "*.njson": "ndjson"
+    },
+
+    "workbench.colorCustomizations": {
+        "editor.selectionHighlightBackground": "#3c773d64",
+        "editor.selectionBackground": "#0000DD",
+        "editorCursor.foreground": "#00ffff",
+        "editorCursor.background": "#000000",
+        "terminalCursor.foreground": "#ffffff"
+    },
+
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.mypy_cache": true,
+        "**/.svn": true,
+        "**/.vscode": true,
+        "**/*.egg-info": true,
+        "**/*.ipynb": true,
+        "**/*.pyc": true,
+        "**/alt-branches": true,
+        "**/appdb-cli": true,
+        "**/archive": true,
+        "**/build-v2/**": true,
+        "**/build/**": true,
+        "**/CVS": true,
+        "**/dataprocessing": true,
+        "**/docker/graylog": true,
+        "**/docker/redis": true,
+        "**/dumps": true,
+        "**/ENV": true,
+        "**/environments": true,
+        "**/node_modules": true,
+        "**/package-lock.json": true,
+        "**/test-deploy/**": true,
+        "**/variables/combined": true
+    },
+    "files.watcherExclude": {
+        "**/__pycache__/**": true,
+        "**/.DS_Store": true,
+        "**/.git/**": true,
+        "**/.hg": true,
+        "**/.mypy_cache/**": true,
+        "**/.svn": true,
+        "**/.vscode/**": true,
+        "**/*.egg-info/**": true,
+        "**/*.ipynb": true,
+        "**/*.pyc": true,
+        "**/alt-branches": true,
+        "**/appdb-cli": true,
+        "**/archive": true,
+        "**/build-v2/**": true,
+        "**/build/**": true,
+        "**/CVS": true,
+        "**/dataprocessing": true,
+        "**/docker/graylog": true,
+        "**/docker/redis": true,
+        "**/dumps/**": true,
+        "**/ENV": true,
+        "**/environments/**": true,
+        "**/node_modules/**": true,
+        "**/package-lock.json": true,
+        "**/test-deploy/**": true,
+        "**/variables/combined/**": true,
+    },
+    // This is required because vscode will otherwise use scancodes - see https://github.com/Microsoft/vscode/issues/23991
+    // "keyboard.dispatch": "keyCode", // Probably only affects linux, disabling for mac.
+    "explorer.confirmDelete": false,
+    "editor.autoIndent": "full",
+    "editor.autoClosingBrackets": "never",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggest.showClasses": false,
+    "editor.suggest.showConstants": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showConstructors": false,
+    "editor.suggest.showColors": false,
+    "editor.suggest.showEnumMembers": false,
+    "editor.suggest.showEnums": false,
+    "editor.suggest.showEvents": false,
+    "editor.suggest.showFields": false,
+    "editor.suggest.showFiles": false,
+    "editor.suggest.showFolders": false,
+    "editor.suggest.showFunctions": false,
+    "editor.suggest.showIcons": false,
+    "editor.suggest.showInterfaces": false,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showMethods": false,
+    "editor.suggest.showModules": false,
+    "editor.suggest.showOperators": false,
+    "editor.suggest.showProperties": false,
+    "editor.suggest.showReferences": false,
+    "editor.suggest.showStructs": false,
+    "editor.suggest.showTypeParameters": false,
+    "editor.suggest.showUnits": false,
+    "editor.suggest.showValues": false,
+    "editor.suggest.showVariables": false,
+    "editor.suggest.showWords": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.autoClosingQuotes": "never",
+
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+
+    // Web dev settings
+    "[typescript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "typescript.tsdk": "/Users/karl/projects/app-dashboard-v2/client/node_modules/typescript/lib/",
+    "editor.multiCursorModifier": "ctrlCmd",
+
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "security.workspace.trust.enabled": false,
+
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.detectIndentation": false,
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "markdown-checkbox.dateWhenChecked": false,
+}

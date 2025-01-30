@@ -3,46 +3,32 @@
         "{ENTRUPY_PROJECTS}/local-development-scripts/shared_configs/switchgit/dataset.json"
     ],
     "commands": {
-        "analytics-feature-flags": {
+        "unmerged": {
           "assign": {
-            "account-api": "analytics-feature-flags",
-            "analytics-ingestor": "analytics-feature-flags"
+            "local-development-scripts": "EINF-907/auto-bump-version",
+            "libnotification": "master"
           },
-          "inherit": "development"
+          "inherit": "default-branch"
         },
         "EINF-427-deploy-require-prod-libraries": {
           "assign": {
             "app-state-service": "EINF-427-deploy-require-prod-libraries",
             "local-development-scripts": "EINF-427-deploy-require-prod-libraries"
           },
-          "inherit": "development"
-        },
-        "autogenerate-sneaker-config": {
-          "assign": {
-            "app-model-service": "EINF-441/sneaker-dynamic-config-generation",
-            "app-endpoint": "kassie/features/EINF-180-deploy-3.11"
-          },
-          "inherit": "development"
+          "inherit": "default-branch"
         },
         "analytics-product-access": {
           "assign": {
             "libappdb-core": "EINF-440/make-libappdb-core-use-logger-consistently",
             "app-cache-ingestor": "fetch-missing-orgs-v2"
           },
-          "inherit": "development"
-        },
-        "fetch-missing-orgs-v2": {
-          "assign": {
-            "libappdb-core": "EINF-440/make-libappdb-core-use-logger-consistently",
-            "app-cache-ingestor": "fetch-missing-orgs-v2"
-          },
-          "inherit": "development"
+          "inherit": "default-branch"
         },
         "backups": {
           "assign": {
             "infrastructure": "dynamodb-table-validation"
           },
-          "inherit": "development"
+          "inherit": "default-branch"
         },
         "mac-webhooks": {
           "assign": {
@@ -57,80 +43,78 @@
             "app-api-public": "development",
             "app-notification-example-endpoint": "docker-compose-debugging"
           },
-          "inherit": "development"
+          "inherit": "default-branch"
         },
-        "development": {
+        "default-branch": {
             "assign": {
-                "app-notification-worker": "development",
                 "entrupy-pgutil": "development",
-                "app-notification-example-endpoint": "development",
-                "ray": "development",
-                "ray-job-broker": "development",
                 "appsmith": "entrupy-development",
-                "account-admin": "development",
-                "account-api": "development",
                 "account-core": "development",
-                "account-payment-queue-processor": "development",
-                "app-api-public": "development",
-                "app-cache-ingestor": "development",
-                "app-dashboard-v2": "development",
-                "app-endpoint": "development",
-                "app-model-service": "development",
-                "app-notification-api": "development",
-                "app-state-service": "development",
                 "async-interval-cache": "development",
-                "auth-server": "development",
-                "dataset-agent": "development",
-                "dataset-configuration": "development",
-                "dataset-devtools": "development",
                 "dataset-image-ops": "development",
-                "dataset-task-daemon": "development",
                 "dslib": "development",
                 "entrupy-api-internal-python": "development",
-                "fingerprint": "development",
                 "graph-core": "development",
                 "graphlib": "development",
                 "libappdb-core": "development",
                 "libnotification": "development",
-                "local-development-scripts": "master",
-                "lambda-scripts": "development",
                 "product-catalog": "development",
-                "push-notification-broker": "development",
-                "sns-listener": "development",
                 "text-field-validator": "development",
                 "webservice-utils": "development",
                 "Flask-SocketIO": "development",
-                "dataset-target_thumbnail-generation": "development",
-                "report-service": "development",
-                "appsmith-customer-dashboard-api": "development"
+                "app-dashboard-v2": "master"
             },
             "inherit": "master"
         },
         "master": {
             "assign": {
-                "graph-monitor": "master",
-                "infrastructure": "master",
-                "dataset-task-daemon": "master",
-                "entrupy-api-internal-python": "master",
-                "app-notification-api": "master",
-                "app-notification-worker": "master",
-                "libnotification": "master",
-                "webservice-utils": "master",
-                "app-state-service": "master",
-                "Flask-SocketIO": "master",
+                "account-admin": "master",
+                "account-api": "master",
+                "account-core": "master",
+                "account-payment-queue-processor": "master",
+                "app-api-public": "master",
                 "app-cache-ingestor": "master",
+                "app-dashboard-v2": "master",
+                "app-endpoint": "master",
+                "app-model-service": "master",
+                "app-notification-api": "master",
+                "app-notification-example-endpoint": "master",
+                "app-notification-worker": "master",
+                "app-state-service": "master",
+                "appsmith-customer-dashboard-api": "master",
+                "appsmith": "entrupy-development",
                 "async-interval-cache": "master",
+                "auth-server": "master",
+                "dataset-agent": "master",
+                "dataset-configuration": "master",
+                "dataset-devtools": "master",
+                "dataset-image-ops": "master",
+                "dataset-target_classify_keras-patches": "master",
+                "dataset-target_thumbnail-generation": "master",
+                "dataset-task-daemon": "master",
+                "dslib": "master",
+                "entrupy-api-internal-python": "master",
+                "entrupy-pgutil": "master",
+                "fingerprint": "master",
+                "Flask-SocketIO": "master",
+                "graph-core": "master",
+                "graph-monitor": "master",
                 "graphlib": "master",
+                "infrastructure": "master",
+                "lambda-scripts": "master",
                 "libappdb-core": "master",
+                "libnotification": "master",
+                "local-development-scripts": "master",
                 "product-catalog": "master",
+                "push-notification-broker": "master",
                 "python-socketio": "master",
+                "ray-job-broker": "master",
+                "ray": "master",
+                "report-service": "master",
+                "sns-listener": "master",
                 "text-field-validator": "master",
                 "via-api": "master",
-                "dataset-target_classify_keras-patches": "master",
-                "dataset-devtools": "master",
-                "app-dashboard-v2": "master",
-                "dataset-target_thumbnail-generation": "master",
-                "lambda-scripts": "master"
+                "webservice-utils": "master"
             }
         }
     },
@@ -226,7 +210,8 @@
         "text-field-validator": {
             "git_url": "git@github.com:entrupy/text-field-validator.git"
         },
-        "variables": {},
+        "real-variables": {},
+        "variables.min": {},
         "via-api": {
             "git_url": "git@github.com:entrupy/via-api.git"
         },
