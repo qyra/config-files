@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
+NOTE_NAME="${1:-notes}"
+FILENAME=`date "+%Y-%m-%d"`-$NOTE_NAME.md
+YEAR=`date "+%Y"`
+echo "Creating note: $FILENAME"
+mkdir -p $HOME/Documents/notes/$YEAR-notes
+code $HOME/Documents/notes/$YEAR-notes/$FILENAME
