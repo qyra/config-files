@@ -103,11 +103,32 @@
         "account-payment-queue-processor": {
             "git_url": "git@github.com:entrupy/account-payment-queue-processor.git"
         },
+        "account-support-admin": {
+            "git_url": "git@github.com:entrupy/account-support-admin.git"
+        },
+        "account-v2": {
+            "git_url": "git@github.com:entrupy/account-v2.git"
+        },
+        "account-write-service": {
+            "git_url": "git@github.com:entrupy/account-write-service.git"
+        },
+        "analytics-ingestor": {
+            "git_url": "git@github.com:entrupy/analytics-ingestor.git"
+        },
+        "analytics-superset": {
+            "git_url": "git@github.com:entrupy/analytics-superset.git"
+        },
         "app-api-public": {
             "git_url": "git@github.com:entrupy/app-api-public.git"
         },
         "app-cache-ingestor": {
             "git_url": "git@github.com:entrupy/app-cache-ingestor.git"
+        },
+        "app-certificate-v2": {
+            "git_url": "git@github.com:entrupy/app-certificate-v2.git"
+        },
+        "app-config-service": {
+            "git_url": "git@github.com:entrupy/app-config-service.git"
         },
         "app-dashboard-v2": {
             "git_url": "git@github.com:entrupy/app-dashboard-v2.git"
@@ -143,9 +164,18 @@
         "auth-server": {
             "git_url": "git@github.com:entrupy/auth-server.git"
         },
+        "autoscaling-simulator": {
+            "git_url": "git@github.com:entrupy/autoscaling-simulator.git"
+        },
         "blur-detection": {
             "git_url": "git@github.com:entrupy/blur-detection.git",
             "disable": true
+        },
+        "check-pr-version-update": {
+            "git_url": "git@github.com:entrupy/check-pr-version-update.git"
+        },
+        "cicd-eb-deploy-function": {
+            "git_url": "git@github.com:entrupy/cicd-eb-deploy-function.git"
         },
         "dataset-agent": {
             "git_url": "git@github.com:entrupy/dataset-agent.git"
@@ -159,11 +189,26 @@
         "dataset-image-ops": {
             "git_url": "git@github.com:entrupy/dataset-image-ops.git"
         },
+        "dataset-service": {
+            "git_url": "git@github.com:entrupy/dataset-service.git"
+        },
         "dataset-target": {
             "git_url": "git@github.com:entrupy/dataset-target.git"
         },
+        "dataset-target_augment-inline": {
+            "git_url": "git@github.com:entrupy/dataset-target_augment-inline.git"
+        },
         "dataset-target_classify_keras-patches": {
             "git_url": "git@github.com:entrupy/dataset-target_classify_keras-patches.git"
+        },
+        "dataset-target_contour": {
+            "git_url": "git@github.com:entrupy/dataset-target_contour.git"
+        },
+        "dataset-target_fingerprint-inline": {
+            "git_url": "git@github.com:entrupy/dataset-target_fingerprint-inline.git"
+        },
+        "dataset-target_pattern_multi": {
+            "git_url": "git@github.com:entrupy/dataset-target_pattern_multi.git"
         },
         "dataset-target_template_low-resolution": {
             "git_url": "git@github.com:entrupy/dataset-target_template_low-resolution.git"
@@ -171,8 +216,14 @@
         "dataset-target_thumbnail-generation": {
             "git_url": "git@github.com:entrupy/dataset-target_thumbnail-generation.git"
         },
+        "dataset-target_voting_quality-control": {
+            "git_url": "git@github.com:entrupy/dataset-target_voting_quality-control.git"
+        },
         "dataset-task-daemon": {
             "git_url": "git@github.com:entrupy/dataset-task-daemon.git"
+        },
+        "docker-library-postgres": {
+            "git_url": "git@github.com:entrupy/docker-library-postgres.git"
         },
         "dslib": {
             "git_url": "git@github.com:entrupy/dslib.git"
@@ -188,6 +239,12 @@
         },
         "Flask-SocketIO": {
             "git_url": "git@github.com:entrupy/Flask-SocketIO.git"
+        },
+        "git-branch-rulesets": {
+            "git_url": "git@github.com:entrupy/git-branch-rulesets.git"
+        },
+        "github-action-test": {
+            "git_url": "git@github.com:entrupy/github-action-test.git"
         },
         "gpu-image-ops": {
             "git_url": "git@github.com:entrupy/gpu-image-ops.git"
@@ -214,6 +271,9 @@
         "libappdb-core": {
             "git_url": "git@github.com:entrupy/libappdb-core.git"
         },
+        "libappdb-core-contractor-version": {
+            "git_url": "git@github.com:entrupy/libappdb-core-contractor-version.git"
+        },
         "libnotification": {
             "git_url": "git@github.com:entrupy/libnotification.git"
         },
@@ -236,14 +296,23 @@
             "git_url": "git@github.com:entrupy/ray-job-broker.git"
         },
         "real-variables": {},
+        "report-configuration-api": {
+            "git_url": "git@github.com:entrupy/report-configuration-api.git"
+        },
         "report-service": {
             "git_url": "git@github.com:entrupy/report-service.git"
+        },
+        "sample-partner-sdk-server": {
+            "git_url": "git@github.com:entrupy/sample-partner-sdk-server.git"
         },
         "scikit-cuda": {
             "git_url": "git@github.com:entrupy/scikit-cuda.git"
         },
         "sns-listener": {
             "git_url": "git@github.com:entrupy/sns-listener.git"
+        },
+        "swig-c-wrappers": {
+            "git_url": "git@github.com:entrupy/swig-c-wrappers.git"
         },
         "text-field-validator": {
             "git_url": "git@github.com:entrupy/text-field-validator.git"
