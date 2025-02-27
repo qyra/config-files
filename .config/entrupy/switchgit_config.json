@@ -5,8 +5,8 @@
     "commands": {
         "unmerged": {
           "assign": {
-            "local-development-scripts": "EINF-907/auto-bump-version",
-            "libnotification": "master"
+            "account-support-admin": "EINF-894/ensure-docker-build-works-in-cicd-actions",
+            "local-development-scripts": "EINF-894/ensure-docker-build-works-in-cicd-actions"
           },
           "inherit": "default-branch"
         },
@@ -33,40 +33,11 @@
         "mac-webhooks": {
           "assign": {
             "app-notification-api": "mac-webhooks",
-            "local-development-scripts": "development",
-            "app-notification-worker": "development",
-            "entrupy-pgutil": "development",
-            "app-cache-ingestor": "development",
-            "entrupy-api-internal-python": "development",
-            "libnotification": "development",
-            "webservice-utils": "development",
-            "app-api-public": "development",
             "app-notification-example-endpoint": "docker-compose-debugging"
           },
           "inherit": "default-branch"
         },
         "default-branch": {
-            "assign": {
-                "entrupy-pgutil": "development",
-                "appsmith": "entrupy-development",
-                "account-core": "development",
-                "async-interval-cache": "development",
-                "dataset-image-ops": "development",
-                "dslib": "development",
-                "entrupy-api-internal-python": "development",
-                "graph-core": "development",
-                "graphlib": "development",
-                "libappdb-core": "development",
-                "libnotification": "development",
-                "product-catalog": "development",
-                "text-field-validator": "development",
-                "webservice-utils": "development",
-                "Flask-SocketIO": "development",
-                "app-dashboard-v2": "master"
-            },
-            "inherit": "master"
-        },
-        "master": {
             "assign": {
                 "account-admin": "master",
                 "account-api": "master",
@@ -115,12 +86,22 @@
                 "text-field-validator": "master",
                 "via-api": "master",
                 "webservice-utils": "master"
-            }
+            },
+            "inherit": "master"
         }
     },
     "repos": {
-        "Flask-SocketIO": {
-            "git_url": "git@github.com:entrupy/Flask-SocketIO.git"
+        "account-admin": {
+            "git_url": "git@github.com:entrupy/account-admin.git"
+        },
+        "account-api": {
+            "git_url": "git@github.com:entrupy/account-api.git"
+        },
+        "account-core": {
+            "git_url": "git@github.com:entrupy/account-core.git"
+        },
+        "account-payment-queue-processor": {
+            "git_url": "git@github.com:entrupy/account-payment-queue-processor.git"
         },
         "app-api-public": {
             "git_url": "git@github.com:entrupy/app-api-public.git"
@@ -140,14 +121,31 @@
         "app-notification-api": {
             "git_url": "git@github.com:entrupy/app-notification-api.git"
         },
+        "app-notification-example-endpoint": {
+            "git_url": "git@github.com:entrupy/app-notification-example-endpoint.git"
+        },
         "app-notification-worker": {
             "git_url": "git@github.com:entrupy/app-notification-worker.git"
         },
         "app-state-service": {
             "git_url": "git@github.com:entrupy/app-state-service.git"
         },
+        "appsmith": {
+            "git_url": "git@github.com:entrupy/appsmith.git",
+            "branch": "entrupy-development"
+        },
+        "appsmith-customer-dashboard-api": {
+            "git_url": "git@github.com:entrupy/appsmith-customer-dashboard-api.git"
+        },
         "async-interval-cache": {
             "git_url": "git@github.com:entrupy/async-interval-cache.git"
+        },
+        "auth-server": {
+            "git_url": "git@github.com:entrupy/auth-server.git"
+        },
+        "blur-detection": {
+            "git_url": "git@github.com:entrupy/blur-detection.git",
+            "disable": true
         },
         "dataset-agent": {
             "git_url": "git@github.com:entrupy/dataset-agent.git"
@@ -164,8 +162,14 @@
         "dataset-target": {
             "git_url": "git@github.com:entrupy/dataset-target.git"
         },
+        "dataset-target_classify_keras-patches": {
+            "git_url": "git@github.com:entrupy/dataset-target_classify_keras-patches.git"
+        },
         "dataset-target_template_low-resolution": {
             "git_url": "git@github.com:entrupy/dataset-target_template_low-resolution.git"
+        },
+        "dataset-target_thumbnail-generation": {
+            "git_url": "git@github.com:entrupy/dataset-target_thumbnail-generation.git"
         },
         "dataset-task-daemon": {
             "git_url": "git@github.com:entrupy/dataset-task-daemon.git"
@@ -176,8 +180,23 @@
         "entrupy-api-internal-python": {
             "git_url": "git@github.com:entrupy/entrupy-api-internal-python.git"
         },
+        "entrupy-pgutil": {
+            "git_url": "git@github.com:entrupy/entrupy-pgutil.git"
+        },
+        "fingerprint": {
+            "git_url": "git@github.com:entrupy/fingerprint.git"
+        },
+        "Flask-SocketIO": {
+            "git_url": "git@github.com:entrupy/Flask-SocketIO.git"
+        },
         "gpu-image-ops": {
             "git_url": "git@github.com:entrupy/gpu-image-ops.git"
+        },
+        "graph-core": {
+            "git_url": "git@github.com:entrupy/graph-core.git"
+        },
+        "graph-monitor": {
+            "git_url": "git@github.com:entrupy/graph-monitor.git"
         },
         "graphlib": {
             "git_url": "git@github.com:entrupy/graphlib.git"
@@ -185,6 +204,12 @@
         "image-similarity-filter": {
             "disable": true,
             "git_url": "git@github.com:entrupy/image-similarity-filter.git"
+        },
+        "infrastructure": {
+            "git_url": "git@github.com:entrupy/infrastructure.git"
+        },
+        "lambda-scripts": {
+            "git_url": "git@github.com:entrupy/lambda-scripts.git"
         },
         "libappdb-core": {
             "git_url": "git@github.com:entrupy/libappdb-core.git"
@@ -198,8 +223,21 @@
         "product-catalog": {
             "git_url": "git@github.com:entrupy/product-catalog.git"
         },
+        "push-notification-broker": {
+            "git_url": "git@github.com:entrupy/push-notification-broker.git"
+        },
         "python-socketio": {
             "git_url": "git@github.com:entrupy/python-socketio.git"
+        },
+        "ray": {
+            "git_url": "git@github.com:entrupy/ray.git"
+        },
+        "ray-job-broker": {
+            "git_url": "git@github.com:entrupy/ray-job-broker.git"
+        },
+        "real-variables": {},
+        "report-service": {
+            "git_url": "git@github.com:entrupy/report-service.git"
         },
         "scikit-cuda": {
             "git_url": "git@github.com:entrupy/scikit-cuda.git"
@@ -210,60 +248,12 @@
         "text-field-validator": {
             "git_url": "git@github.com:entrupy/text-field-validator.git"
         },
-        "real-variables": {},
         "variables.min": {},
         "via-api": {
             "git_url": "git@github.com:entrupy/via-api.git"
         },
         "webservice-utils": {
             "git_url": "git@github.com:entrupy/webservice-utils.git"
-        },
-        "graph-core": {
-            "git_url": "git@github.com:entrupy/graph-core.git"
-        },
-        "appsmith": {
-            "git_url": "git@github.com:entrupy/appsmith.git",
-            "branch": "entrupy-development"
-        },
-        "report-service": {
-            "git_url": "git@github.com:entrupy/report-service.git"
-        },
-        "entrupy-pgutil": {
-            "git_url": "git@github.com:entrupy/entrupy-pgutil.git"
-        },
-        "dataset-target_thumbnail-generation": {
-            "git_url": "git@github.com:entrupy/dataset-target_thumbnail-generation.git"
-        },
-        "lambda-scripts": {
-            "git_url": "git@github.com:entrupy/lambda-scripts.git"
-        },
-        "ray": {
-          "git_url": "git@github.com:entrupy/ray.git"
-        },
-        "ray-job-broker": {
-          "git_url": "git@github.com:entrupy/ray-job-broker.git"
-        },
-        "account-admin": {
-          "git_url": "git@github.com:entrupy/account-admin.git"
-        },
-        "account-core": {
-          "git_url": "git@github.com:entrupy/account-core.git"
-        },
-        "account-payment-queue-processor": {
-          "git_url": "git@github.com:entrupy/account-payment-queue-processor.git"
-        },
-        "auth-server": {
-          "git_url": "git@github.com:entrupy/auth-server.git"
-        },
-        "push-notification-broker": {
-          "git_url": "git@github.com:entrupy/push-notification-broker.git"
-        },
-        "appsmith-customer-dashboard-api": {
-          "git_url": "git@github.com:entrupy/appsmith-customer-dashboard-api.git"
-        },
-        "blur-detection": {
-          "git_url": "git@github.com:entrupy/blur-detection.git",
-          "disable": true
         }
     }
 }

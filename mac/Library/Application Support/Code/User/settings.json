@@ -207,4 +207,5 @@
       "strings": true
     },
     "markdown-checkbox.dateWhenChecked": false,
+    "diffEditor.maxComputationTime": 0,
 }
