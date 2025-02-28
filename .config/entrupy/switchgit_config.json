@@ -137,7 +137,7 @@
             "git_url": "git@github.com:entrupy/app-endpoint.git"
         },
         "app-model-service": {
-            "git_url": "git@github.com:entrupy/app-model-service.git"
+            "git_url": "git@github.com:entrupy/app-model-service-v2.git"
         },
         "app-notification-api": {
             "git_url": "git@github.com:entrupy/app-notification-api.git"
