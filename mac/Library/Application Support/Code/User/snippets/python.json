@@ -1,0 +1,154 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+    // }
+    "kjelapsed": {
+        "prefix": "kjelapsed",
+        "body": [
+            "print('$1 took: {}ms'.format(round((time.time() - t0) * 1000, 3)))",
+        ]
+    },
+    "kjenc": {
+        "prefix": "kjenc",
+        "body": [
+            "encoding='utf-8'",
+        ]
+    },
+    "kjmkdir": {
+        "prefix": "kjmkdir",
+        "body": [
+            "try:",
+            "    os.makedirs($1)",
+            "except FileExistsError:",
+            "    pass",
+            "$2",
+        ]
+    },
+    "jlo": {
+        "prefix": "jlo",
+        "body": [
+            "with open($1) as f:",
+            "    $2 = json.load(f)",
+            "$3",
+        ]
+    },
+    "pf": {
+        "prefix": "pf",
+        "body": ["print(f\"$1\")\n$2"],
+        "description": "print with format string"
+    },
+    "pfe": {
+        "prefix": "pfe",
+        "body": ["print(f\"$1\", file=sys.stderr)\n$2"],
+        "description": "print error with format string"
+    },
+    "kjisstr": {
+        "prefix": "kjisstr",
+        "body": [
+            "isinstance($1, (six.string_types, bytes))",
+        ],
+        "description": "check if X is a string(python2 + python3)"
+    },
+    // "kjbasestring": {
+    //     "prefix": "kjbasestring",
+    //     "body": [
+    //         "from past.builtins import basestring",
+    //     ],
+    //     "description": "import basestring (python2 + python3)"
+    // },
+    "main": {
+        "prefix": "kjmain",
+        "body": [
+            "def main():",
+            "    $0",
+            "",
+            "if __name__ == \"__main__\":",
+            "    main()"
+        ]
+    },
+    "eprint": {
+        "prefix": "eprint",
+        "body": [
+            "print('$1', file=sys.stderr)"
+        ]
+    },
+	"Print Traceback": {
+		"prefix": "kjback",
+		"body": [
+			"print(traceback.format_exc())"
+		]
+	},
+	"Walk files": {
+		"prefix": "kjwalk",
+		"body": [
+            "for root, dirs, files in os.walk($1):",
+            "    dirs.sort()",
+			"    for filename in sorted(files):",
+			"        filepath = os.path.join(root, filename)",
+			"        $2",
+		]
+	},
+	"Enable debugger": {
+		"prefix": "trace",
+		"body": [
+			"from pprint import pprint; import pdb; pdb.set_trace()"
+		],
+		"description": "Enable debugger"
+	},
+	"Gshow + ptpdb debugger": {
+		"prefix": "gtrace",
+		"body": [
+			"from entrupy.dataset_image_ops.sessions.display_image import gshow",
+			"from pprint import pprint; import pdb; pdb.set_trace()"
+		],
+		"description": "Gshow + ptpdb debugger"
+	},
+	"Enable ptpdb debugger": {
+		"prefix": "ptrace",
+		"body": [
+			"from pprint import pprint; import ptpdb; ptpdb.set_trace()"
+		],
+		"description": "Enable debugger"
+	},
+	"Disable Pylint": {
+		"prefix": "disable",
+		"body": [
+			"# pylint: disable="
+		],
+		"description": "Disable Pylint"
+	},
+	// Argparse Snippets
+	"Argparse Initialize": {
+		"prefix": "kjargparse",
+		"body": [
+			"parser = argparse.ArgumentParser(description='$1')",
+			"",
+			"options = parser.parse_args()",
+		],
+		"description": "Initialize Argparse"
+	},
+	"Argparse Boolean": {
+		"prefix": "kjargbool",
+		"body": [
+			"parser.add_argument('--$1', action='store_true', required=False, help='$4')"
+		],
+		"description": "Argparse Boolean"
+	},
+	"Argparse String": {
+		"prefix": "kjstr",
+		"body": [
+			"parser.add_argument('--$1', metavar='$1', required=True, help='$4')"
+		],
+		"description": "Argparse String"
+	},
+}
