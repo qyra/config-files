@@ -69,4 +69,9 @@
     "command": "-workbench.action.compareEditor.previousChange",
     "when": "textCompareEditorVisible"
   },
+  {
+    "key": "shift+cmd+k",
+    "command": "-aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
+  },
 ]
